@@ -1,7 +1,7 @@
 databases:
   - name: real-time-search
-    databaseName: real-time-search
-    user: real-time-search
+    databaseName: real_time_search_re3t
+    user: real_time_search_re3t_user
     plan: free
 
 services:
