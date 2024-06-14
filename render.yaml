@@ -1,7 +1,7 @@
 databases:
-  - name: mysite
-    databaseName: mysite
-    user: mysite
+  - name: real-time-search
+    databaseName: real-time-search
+    user: real-time-search
     plan: free
 
 services:
