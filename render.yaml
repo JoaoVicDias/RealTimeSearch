@@ -6,16 +6,16 @@ databases:
 
 services:
   - type: web
-    name: mysite
+    name: real-time-search
     runtime: ruby
     plan: free
     buildCommand: "./bin/render-build.sh"
     # preDeployCommand: "bundle exec rails db:migrate" # preDeployCommand only available on paid instance types
     startCommand: "bundle exec rails server"
     envVars:
-      - key: postgres://real_time_search_re3t_user:501qLNvwXVsCO8LRvjFeBYUfvTEgFtrq@dpg-cplqgsaju9rs73fj26ng-a/real_time_search_re3t
+      - key: postgres://real_time_search_re3t_user:501qLNvwXVsCO8LRvjFeBYUfvTEgFtrq@dpg-cplqgsaju9rs73fj26ng-a.oregon-postgres.render.com/real_time_search_re3t
         fromDatabase:
-          name: mysite
+          name: real-time-search
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
