@@ -1,0 +1,12 @@
+<h1 class="text-center mt-5 mb-5">Search Articles</h1>
+
+<%= form_with url: searches_path, method: :post, remote: true do %>
+    <div class="form-floating w-50 m-auto mb-3">
+        <%= text_field_tag :query, nil, id: 'real_time_input', placeholder: 'Digite para buscar...', class: 'form-control' %>
+        <label for="real_time_input">Search Here</label>
+    </div>
+<% end %>
+
+<div class="d-flex justify-content-center align-items-center">
+    <%= link_to "Go to Searches", "/user-search", class: 'btn btn-info mt-5 w-25' %>
+</div>
