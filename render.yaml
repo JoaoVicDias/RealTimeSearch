@@ -13,7 +13,7 @@ services:
     # preDeployCommand: "bundle exec rails db:migrate" # preDeployCommand only available on paid instance types
     startCommand: "bundle exec rails server"
     envVars:
-      - key: DATABASE_URL
+      - key: postgres://real_time_search_re3t_user:501qLNvwXVsCO8LRvjFeBYUfvTEgFtrq@dpg-cplqgsaju9rs73fj26ng-a/real_time_search_re3t
         fromDatabase:
           name: mysite
           property: connectionString
