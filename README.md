@@ -6,8 +6,8 @@ RealTimeSearch save users search without incomplete search and shows analytics.
 
 You'll need:
 
-- [Ruby](https://www.ruby-lang.org/en/) it's advised to use [RVM](https://rvm.io/) and current version is placed on `.ruby-version`
-- [NodeJS](https://nodejs.oirg/) it's advised to use [NVM](https://github.com/nvm-sh/nvm) and current version is placed on `.nvmrc
+- Ruby 
+- NodeJS
 - [yarn](https://yarnpkg.com/en/docs/install)
 
 ## Setup steps
@@ -15,10 +15,11 @@ You'll need:
 1. Run `bundle install` to fetch all necessary gems.
 2. Run `rails db:migrate RAILS_ENV=development` to prepare your local database.
 3. Run `yarn install`
+4. Run `rails s` to run local server.
 
 #### Run tests steps
 
-1. Run `rails db:migrate RAILS_ENV=development` to fetch all necessary gems.
+1. Run `rails db:migrate RAILS_ENV=test` to fetch all necessary gems.
 2. Run `bundle exec rspec` to run all unit tests.
 
 
